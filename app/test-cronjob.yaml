@@ -2,7 +2,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: image-pruner
-  namespace: test
+  namespace: openshift-gitops
 spec:
   concurrencyPolicy: Forbid
   failedJobsHistoryLimit: 3
